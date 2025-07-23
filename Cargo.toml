@@ -1,0 +1,16 @@
+[package]
+name = "stack-debug"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+syn = { version = "2.0", features = ["full"] }
+quote = "1.0"
+proc-macro2 = "1.0"
+tracing = { version = "0.1", optional = true }
+
+[lib]
+proc-macro = true
+
+[workspace]
+members = [".", "examples/example"]
