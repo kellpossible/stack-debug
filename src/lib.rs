@@ -26,7 +26,7 @@ pub fn instrument(attr: TokenStream, item: TokenStream) -> TokenStream {
     let expanded = quote! {
         #(#attrs)*
         #[inline(never)]
-        #[tracing::instrument]
+        #[tracing::instrument(skip_all)]
         #vis #sig {
             let rbp: usize;
             let rsp: usize;
