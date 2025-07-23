@@ -1,6 +1,8 @@
 # `stack-debug`
 
-An experimental Rust crate for instrumenting functions to print stack sizes to debug stack overflows.
+[![crates.io](https://img.shields.io/crates/v/stack-debug.svg)](https://crates.io/crates/stack-debug)
+
+An experimental Rust crate with a macro for instrumenting functions to print stack sizes to debug stack overflows.
 
 The motivation to create this crate came from a situation where I wanted to debug a stack overflow in an application and I wanted to see which functions were taking up the most amount of stack space.
 

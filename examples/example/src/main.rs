@@ -13,8 +13,7 @@ fn nested() {
 }
 
 #[stack_debug::instrument]
-fn function_with_small_stack_frame() {
-}
+fn function_with_small_stack_frame() {}
 
 fn main() {
     tracing_subscriber::fmt().init();

@@ -2,6 +2,11 @@
 name = "stack-debug"
 version = "0.1.0"
 edition = "2024"
+license = "MIT"
+repository = "https://github.com/kellpossible/stack-debug"
+readme = "README.md"
+description = "An experimental Rust crate with a macro for instrumenting functions to print stack sizes to debug stack overflows"
+keywords = ["stack", "usage", "analysis", "debug"]
 
 [dependencies]
 syn = { version = "2.0", features = ["full"] }
