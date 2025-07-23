@@ -6,6 +6,8 @@ An experimental Rust crate with a macro for instrumenting functions to print sta
 
 The motivation to create this crate came from a situation where I wanted to debug a stack overflow in an application and I wanted to see which functions were taking up the most amount of stack space.
 
+**Currently only x86_64 architecture is supported**.
+
 **WARNING**: The outputs from this crate are probably not precise, but they should at least give you an indication and help narrow down during investigations. The macro enables `#[inline(never)]` which may end causing different results to what you would get when the compiler decides to inline the function.
 
 ## Usage
