@@ -4,6 +4,8 @@ An experimental Rust crate for instrumenting functions to print stack sizes to d
 
 The motivation to create this crate came from a situation where I wanted to debug a stack overflow in an application and I wanted to see which functions were taking up the most amount of stack space.
 
+**WARNING**: The outputs from this crate are probably not precise, but they should at least give you an indication and help narrow down during investigations. The macro enables `#[inline(never)]` which may end causing different results to what you would get when the compiler decides to inline the function.
+
 ## Usage
 
 In your `.cargo/config.toml` we need to enable frame pointers, as the calculations rely on them:
